@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Memory - Animaux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Jeu de Memoire - Animaux</h1>
+        
+        <div class="game-info">
+            <div class="score-box">
+                <span class="label">Coups:</span>
+                <span class="moves">0</span>
+            </div>
+            <button class="btn-restart" onclick="restartGame()"> Nouvelle Partie</button>
+        </div>
+
+        <div class="game-board" id="gameBoard">
+            <!-- Les cartes seront générées ici par JavaScript -->
+        </div>
+
+        <div class="victory-modal" id="victoryModal">
+            <div class="modal-content">
+                <h2> Félicitations !!</h2>
+                <p>Vous avez trouvé toutes les paires !</p>
+                <p class="final-score">Nombre de coups: <span id="finalMoves">0</span></p>
+                <button class="btn-play-again" onclick="restartGame()">Rejouer</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
